@@ -121,7 +121,7 @@ footer{
 #signup{
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: auto;
     justify-content:center;
 }
 #footing{
