@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+#home,#about,#volunteer,#cats,#donation{
+    font-size: xx-large;
+    text-shadow: 3px 3px grey;
+}
+.hyperlink{
+    text-decoration: none;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+.title{
+    font-family: 'Rubik Bubbles', cursive;
+    color: whitesmoke;
+    text-shadow: 5px 0px rgb(95, 95, 95);
+    margin: 2px;
+}
+#tagline{
+    font-family: 'Rubik Bubbles', cursive;
+    margin: 2px;
+    text-align: center;
+    text-shadow: 1px 1px white;
+    font-size: 1em;
+}
+.info{
+    font-family: 'Rubik Bubbles', cursive;
+    font-weight: lighter;
+    text-shadow: 1px 1px white;
+}
+body{
+    background:repeating-linear-gradient(skyblue,aqua);
+}
+#accordionExample{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.accordion-body{
+    background-color: aqua;
+}
+.accordion-header{
+    font-family:'Rubik Bubbles', cursive;
+}
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    .hyperlink{
+        font-size: 30px
+    }
+}
+@media only screen and (max-width: 1800px) and (min-width: 801px) {
+    .hyperlink {
+        font-size: 40px;
+      }
+}
+#form{color: grey;
+    font-size: small;
+    border: 1px grey solid;
+    width: 80%;
+    height: 20px;
+    background-color: white;
+    margin:10px
+}
+#submit{color: grey;
+    font-size: small;
+    border: 1px grey solid;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+    align-items: center;
+}
+#signup{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content:center;
+}
+#footing{
+    font-family: 'Rubik Bubbles', cursive;
+    margin: 1px;
+    text-shadow: 1px 1px white;
+}

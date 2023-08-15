@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for Cats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(147, 237, 237);
+            margin: 0;
+            padding: 0;
+        }
+        #Title {
+            background-color: rgb(145, 141, 141);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: 1000px;
+        }
+
+        .Subtitle {
+            background-color: whitesmoke;
+            color: rgb(147, 237, 237);
+            text-align: center;
+            padding: 5px;
+            max-width: 700px;
+            margin: 10px auto;
+            font-weight: 100;
+            font-size: 20px;
+            font-style: oblique;
+            border: none;
+            border-radius: 15px;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        .donate-form {
+            text-align: center;
+        }
+
+        .donate-form input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .donate-form button {
+            background-color: rgb(77, 112, 179);
+            color: whitesmoke;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .donate-form button:hover {
+            background-color: blue;
+        }
+
+        .thank-you-message {
+            display: none;
+            color: #007bff;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Explanation section styles */
+        .explanation {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .explanation h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .explanation p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./adoptdontshop.css">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <h1 class="title">Adopt, Don't Shop! &nbsp; <span> &#9729;</span></h1>
+            <p id="tagline">Helping you adopt your puuurfect furry companion.</p>
+        </div>
+        <nav style="min-width: 300px;">
+            <a href="index.html" class="hyperlink"><span id="home">&#127968;</span></a>
+            <a href="aboutus.html" class="hyperlink"><span id="about">&#128214;</span></a>
+            <a href="catprofiles.html" class="hyperlink"><span id="cats">&#128570;</span></a>
+            <a href="donate.html" class="hyperlink"><span id="donation">&#x1F381;</span></a>
+            <a href="volunteer.html" class="hyperlink"><span id="volunteer" >&#x23F0;</span></a>
+        </nav>
+    </header>
+    <header>
+        <div id="Title">
+            <h1>Donation for Cats</h1>
+        </div>
+        <div class="Subtitle">
+            <h1>Adopt, Don't Shop</h1>
+        </div>
+    </header>
+    <div id="container">
+        <div class="donate-form">
+            <p>Help us provide a better life for cats by making a donation.</p>
+            <label for="amount">Please Enter Donation Amount Below:</label>
+            <input type="number" id="amount" placeholder="Enter amount in USD" step="0.01" min="1" required>
+            <button onclick="showThankYouMessage()">Donate</button>
+        </div>
+        <div class="thank-you-message" id="thankYouMessage">
+            Thank you for your generous donation!
+        </div>
+    </div>
+
+    <!-- Explanation section -->
+    <div class="explanation">
+        <h2>Why Your Donation Matters</h2>
+        <p>Your contribution helps us provide essential care, medical treatment, and a loving environment for cats in need. By donating, you make a positive impact on their lives and contribute to our mission of creating a better world for these furry friends.</p>
+    </div>
+
+    <footer class="text-center text-lg-start" style="background-color: azure;">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h4 id="footing">Sign up to our monthly newsletter!</h4>
+      
+                <div id="signup">
+                    <p id="form">Example@email.com</p>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg p-3"> Adopt Don't Shop</i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-lg text-info p-3"> @adoptdontshop</i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-lg text-danger p-3"> @adscats</i></a>
+                <br>
+                <i class="bi bi-geo ps-3" id="address"> Adopt Don't Shop, 4 Paw Street, Meowville, CT42 1LC</i>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center pt-4">
+          © Copyright 2023 Adopt Don't Shop | Registered Charity Number 01010101010 |
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        function showThankYouMessage() {
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.querySelector(".donate-form").style.display = "none";
+        }
+    </script>
+</body>
+</html>
